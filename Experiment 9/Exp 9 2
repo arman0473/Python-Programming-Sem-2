@@ -1,0 +1,16 @@
+# Program using date time module to print current date, time and weekday
+"""
+Created on Mon Apr 20 14:51:03 2026
+
+@author:Araman
+"""
+
+import datetime
+
+now = datetime.datetime.now()
+
+print("Current Date:", now.strftime("%Y-%m-%d"))
+
+print("Current Time:", now.strftime("%H:%M:%S"))
+
+print("Weekday:", now.strftime("%A"))
