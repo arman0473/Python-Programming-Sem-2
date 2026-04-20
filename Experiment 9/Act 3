@@ -1,0 +1,18 @@
+#Generate OTP using random module
+"""
+Created on Mon Apr 20 15:01:41 2026
+
+@author:Araman
+"""
+
+import random
+
+length = int(input("Enter OTP length: "))
+
+otp = ""
+
+for i in range(length):
+    digit = random.randint(0, 9)
+    otp += str(digit)
+
+print(f"Generated OTP is: {otp}")
