@@ -1,0 +1,14 @@
+# Display your name addresss and contact number
+"""
+Created on Mon Apr 20 15:04:56 2026
+
+@author: Araman
+"""
+name = "Araman Mujavar"
+address = "Satara, Ramnagar"
+
+contact_number = "8446550304"
+
+print("Name:", name)
+print("Address:", address)
+print("Contact Number:", contact_number)
