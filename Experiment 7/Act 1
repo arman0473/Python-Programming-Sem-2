@@ -1,0 +1,41 @@
+#BankAccount Class (Deposit & Withdraw)
+"""
+Created on Mon Apr 27 14:42:30 2026
+
+@author: Araman
+"""
+
+class BankAccount:
+    def __init__(self, name, acc_no, balance):
+        self.name = name
+        self.acc_no = acc_no
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited: {amount}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient balance!")
+        else:
+            self.balance -= amount
+            print(f"Withdrawn: {amount}")
+
+    def display(self):
+        print(f"Account Holder: {self.name}")
+        print(f"Account Number: {self.acc_no}")
+        print(f"Balance: {self.balance}")
+
+
+name = input("Enter name: ")
+acc_no = input("Enter account number: ")
+balance = float(input("Enter initial balance: "))
+
+acc = BankAccount(name, acc_no, balance)
+
+acc.deposit(500)
+acc.withdraw(300)
+
+print("\nAccount Details:")
+acc.display()
