@@ -2,7 +2,7 @@
 """
 Created on Sat May  9 20:07:35 2026
 
-@author: Praneet
+@author: Araman
 """
 
 import streamlit as st
